@@ -261,6 +261,9 @@ p {
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
+.about p{
+  text-align: start;
+}
 
 /* End Hero Section */
 
@@ -298,6 +301,12 @@ p {
   z-index: 1;
   overflow: hidden;
 }
+.service-item{
+  width: 100%;
+}
+.service-bottom{
+  width: 100%;
+}
 #services .service-item::after {
   content: "";
   position: absolute;
@@ -320,9 +329,29 @@ p {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+.services p{
+  text-align: start;
+  margin: 0 30px;
+}
 #services .service-item p {
   color: white;
   text-align: left;
+}.skills img{
+  width: 100px;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 10px;
+  height: 100px;
+  object-fit: cover;
+}
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  margin: 50px auto;
+  flex-wrap: wrap;
 }
 /* End Services Section */
 
@@ -488,6 +517,7 @@ p {
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
+
 #footer .footer {
   min-height: 200px;
   flex-direction: column;
